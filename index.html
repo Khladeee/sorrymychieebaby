@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry, Rytch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="sky"></div>
+<div class="stars" id="stars"></div>
+
+<section id="hero">
+  <span class="eyebrow reveal">a note for you</span>
+  <div class="moon-wrap reveal" id="moonWrap">
+    <div class="moon" id="moonEl"></div>
+    <span class="zzz">z</span>
+    <span class="zzz">z</span>
+    <span class="zzz">z</span>
+  </div>
+  <h1 class="reveal"><span id="typeTarget"></span><span class="cursor-blink"></span></h1>
+  <p class="scroll-hint reveal">scroll down ↓</p>
+  <p class="hero-hint reveal">(the stars are clickable, by the way)</p>
+</section>
+
+<section id="letter">
+  <div class="card reveal">
+    <span class="kicker">what I should've done</span>
+    <p>We were on call, and I should've stayed present with you. Instead, I fell asleep and left you feeling like our time together wasn't important enough to me.</p>
+    <p>I know you were looking forward to talking to me, especially after the days we barely got to spend time together. I'm sorry, Rytch. You deserved my attention, and I didn't give you enough of it that night.</p>
+    <p class="sign">— me</p>
+  </div>
+</section>
+
+<section id="reasons">
+  <h2 class="serif reveal">so let me say this clearly</h2>
+  <p class="sub reveal">a few things I never want you to question, even when I mess up</p>
+  <div class="cards">
+    <div class="card2 reveal" data-tilt>
+      <span class="n">one</span>
+      <p>I value every moment I get to spend with you. Even the random conversations, late-night calls, and quiet moments mean more to me than you probably realize.</p>
+    </div>
+    <div class="card2 reveal" data-tilt>
+      <span class="n">two</span>
+      <p>I know saying "sorry" isn't enough when my actions made you feel otherwise. I'm not asking you to forget how you felt. I just want the chance to show you that I can do better.</p>
+    </div>
+    <div class="card2 reveal" data-tilt>
+      <span class="n">three</span>
+      <p>You didn't do anything wrong. You weren't asking for too much. I understand why you felt hurt, and your feelings are completely valid.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dawn">
+  <div class="sun reveal"></div>
+  <h2 class="serif reveal">Let me <em>make it up</em> to you.</h2>
+  <p class="lede reveal">You mean so much to me, and that won't change just because our schedules get busy or we don't get to talk as much. I'll always value the time we have together, and I'll keep making the effort to make you feel loved, heard, and important to me. You never have to question how much you mean to me, Rytch..</p>
+  <p class="lede2 reveal">That means when we do get time to talk, I show up for it properly — present, not half there. Not a promise made in the moment to smooth things over, but something I'm accountable to whether or not I've messed up recently.</p>
+  <p class="promise reveal">"some moments can't be replayed, but they can be followed by better ones."</p>
+</section>
+
+<section id="jar">
+  <h2 class="serif reveal">a jar of small truths</h2>
+  <p class="sub reveal">click it, as many times as you want</p>
+  <div class="jar-wrap reveal">
+    <div class="jar" id="jarEl">
+      <svg viewBox="0 0 150 170" xmlns="http://www.w3.org/2000/svg">
+        <rect x="35" y="20" width="80" height="14" rx="4" fill="#e8dcc4" opacity="0.9"/>
+        <path d="M28 34 h94 a6 6 0 0 1 6 6 v110 a14 14 0 0 1 -14 14 H36 a14 14 0 0 1 -14 -14 V40 a6 6 0 0 1 6 -6 z"
+              fill="rgba(245,240,255,0.06)" stroke="rgba(245,240,255,0.35)" stroke-width="1.5"/>
+        <circle cx="60" cy="90" r="3" fill="#f2b880"/>
+        <circle cx="90" cy="110" r="2.5" fill="#e8c468"/>
+        <circle cx="75" cy="70" r="2" fill="#b9a9e3"/>
+        <circle cx="95" cy="80" r="2.5" fill="#f2b880"/>
+        <circle cx="55" cy="120" r="2" fill="#e8c468"/>
+      </svg>
+    </div>
+    <p class="jar-note" id="jarNote"></p>
+    <p class="jar-hint">tap the jar to pull one out</p>
+    <p class="jar-count" id="jarCount"></p>
+  </div>
+</section>
+
+<section id="forgive">
+  <h2 class="serif reveal">so, <em>will you forgive me?</em></h2>
+  <div class="btn-row" id="btnRow">
+    <button class="btn btn-yes" id="yesBtn">yes</button>
+    <button class="btn btn-no" id="noBtn">no</button>
+  </div>
+  <p class="no-count" id="noCount"></p>
+  <p class="result" id="result"></p>
+</section>
+
+<footer>made for the person I should've stayed awake for.</footer>
+
+<div class="celebrate" id="celebrate"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
